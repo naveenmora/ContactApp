@@ -1,0 +1,55 @@
+.success
+.error
+.container-contact100
+  .wrap-contact100
+    = form_with url: api_v1_contacts_path, html: { id: 'simple_form', class: 'contact100-form validate-form' } do |f|
+      %span.contact100-form-title
+        = t('form_title')
+      = f.label :first_name, t('prompt_name'), class: 'label-input100'
+      .wrap-input100.rs1-wrap-input100.validate-input{"data-validate" => "Type first name"}
+        = f.text_field :first_name, placeholder: t('first_name_placeholder'), class: 'input100'
+        %span.focus-input100
+      .wrap-input100.rs2-wrap-input100.validate-input{"data-validate" => "Type last name"}
+        = f.text_field :last_name, placeholder: t('last_name_placeholder'), class: 'input100'
+        %span.focus-input100
+      = f.label :email, t('prompt_email'), class: 'label-input100'
+      .wrap-input100.validate-input{"data-validate" => "Valid email is required: ex@abc.xyz"}
+        = f.text_field :email, placeholder: t('email_placeholder'), class: 'input100'
+        %span.focus-input100
+      = f.label :phone, t('prompt_phone'), class: 'label-input100'
+      .wrap-input100
+        = f.telephone_field :phone, placeholder: t('phone_number_placeholder'), class: 'input100'
+        %span.focus-input100
+      = f.label :message, t('message'), class: 'label-input100'
+      .wrap-input100.validate-input{"data-validate" => "Message is required"}
+        = f.text_area :message, placeholder: t('message_placholder'), class: 'input100'
+        %span.focus-input100
+      .container-contact100-form-btn
+        = f.submit t('send_message'), class: "contact100-form-btn"
+    .contact100-more.flex-col-c-m{style: "background-image: url(#{asset_path 'bg-01.jpg'});"}
+      .flex-w.size1.p-b-47
+        .txt1.p-r-25
+          %span.lnr.lnr-map-marker
+        .flex-col.size2
+          %span.txt1.p-b-20
+            = t('address')
+          %span.txt2
+            = t('address_details')
+      .dis-flex.size1.p-b-47
+        .txt1.p-r-25
+          %span.lnr.lnr-phone-handset
+        .flex-col.size2
+          %span.txt1.p-b-20
+            = t('lets_talk')
+          %span.txt3
+            +1 800 1236879
+      .dis-flex.size1.p-b-47
+        .txt1.p-r-25
+          %span.lnr.lnr-envelope
+        .flex-col.size2
+          %span.txt1.p-b-20
+            = t('general_support')
+          %span.txt3
+            contact@example.com
+
+= javascript_include_tag "main"

@@ -1,0 +1,46 @@
+{
+  "Minitest": {
+    "coverage": {
+      "/home/naveen/websites/ContactApp/test/mailers/contact_mailer_test.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/naveen/websites/ContactApp/test/models/contact_test.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1601645858
+  },
+  "Unit Tests": {
+    "coverage": {
+    },
+    "timestamp": 1601641004
+  }
+}

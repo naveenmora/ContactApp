@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Contact
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application'
+    = javascript_include_tag 'application'
+  %body
+    %br    
+    .container
+      .row
+        .col-md-12
+          .dropdown.align-right
+            %button#dropdownMenuButton.btn-sm.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+              = locale_label
+            .dropdown-menu{"aria-labelledby" => "dropdownMenuButton"}
+              - LANGUAGES.each do |code, name|
+                %a.dropdown-item{:href => "/#{code}"}= name
+      %br 
+      = yield

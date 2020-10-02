@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ruby 2.5.1
+rails 5.2.4.2
+SQLite3
 
-Things you may want to cover:
+rake db:setup
+rails s
 
-* Ruby version
+FYI: I have used letter_opener for email notification in local development environment.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
