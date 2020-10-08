@@ -6,14 +6,14 @@
       %span.contact100-form-title
         = t('form_title')
       = f.label :first_name, t('prompt_name'), class: 'label-input100'
-      .wrap-input100.rs1-wrap-input100.validate-input{"data-validate" => "Type first name"}
+      .wrap-input100.rs1-wrap-input100.validate-input{"data-validate" => t('first_name_error_msg')}
         = f.text_field :first_name, placeholder: t('first_name_placeholder'), class: 'input100'
         %span.focus-input100
-      .wrap-input100.rs2-wrap-input100.validate-input{"data-validate" => "Type last name"}
+      .wrap-input100.rs2-wrap-input100.validate-input{"data-validate" => t('last_name_error_msg')}
         = f.text_field :last_name, placeholder: t('last_name_placeholder'), class: 'input100'
         %span.focus-input100
       = f.label :email, t('prompt_email'), class: 'label-input100'
-      .wrap-input100.validate-input{"data-validate" => "Valid email is required: ex@abc.xyz"}
+      .wrap-input100.validate-input{"data-validate" => t('email_error_msg')}
         = f.text_field :email, placeholder: t('email_placeholder'), class: 'input100'
         %span.focus-input100
       = f.label :phone, t('prompt_phone'), class: 'label-input100'
@@ -21,7 +21,7 @@
         = f.telephone_field :phone, placeholder: t('phone_number_placeholder'), class: 'input100'
         %span.focus-input100
       = f.label :message, t('message'), class: 'label-input100'
-      .wrap-input100.validate-input{"data-validate" => "Message is required"}
+      .wrap-input100.validate-input{"data-validate" => t('message_error_msg')}
         = f.text_area :message, placeholder: t('message_placholder'), class: 'input100'
         %span.focus-input100
       .container-contact100-form-btn

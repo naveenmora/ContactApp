@@ -15,3 +15,7 @@ es:
   prompt_phone: 'Introduzca el número de teléfono'
   message: 'Mensaje *'
   address_details: 'Mada Center 8th floor, 379 Hudson St, Nueva York, NY 10018 US'
+  first_name_error_msg: 'Escriba el nombre'
+  last_name_error_msg: 'Escriba el apellido'
+  email_error_msg: 'Se requiere un correo electrónico válido: ex@abc.xyz'
+  message_error_msg: 'Se requiere mensaje'

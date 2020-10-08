@@ -25,18 +25,13 @@
           null,
           1,
           0,
-          null,
-          null,
-          null,
-          null,
-          null,
           0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1601645858
+    "timestamp": 1602179583
   },
   "Unit Tests": {
     "coverage": {
